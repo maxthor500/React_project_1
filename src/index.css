@@ -1,13 +1,51 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
 }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #21222A;
+  height: 5.5rem;
+  padding: 1.8rem 1.5rem;
+  justify-content: space-between;
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  color: #61DAFB;
+  text-decoration: none;
+}
+
+#react-logo {
+  height: 2.5rem;
+  margin-right: .5rem;
+}
+
+.navbar-brand > h1 {
+  display: none;
+}
+
+.h2-style {
+  color: #DEEBF8;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 30em) {
+  .navbar-brand > h1 {
+    display: inline-flex;
+    font-size: 1.8rem;
+  }
+
+  .h2-style {
+    font-size: 1.2rem;
+  }
+}
+
