@@ -41,6 +41,10 @@ body {
 .container-main {
   color: white;
   padding: 3rem;
+  background-image: url(./images/react-icon-large.png);
+  background-size: 10rem;
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 .container-main > h1 {
@@ -49,15 +53,24 @@ body {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
+  background-color: transparent;
 }
 
 #list-main {
   margin-top: 2.5rem;
+  padding-left: 3.5rem;
+  background-color: transparent;
 }
 
 .list-item {
   margin-bottom: 1rem;
   font-size: 1.2rem;
+  background-color: transparent;
+}
+
+.list-item::marker {
+  color:#61DAFB;
+  font-size: 1.8rem;
 }
 
 .bg-black {
